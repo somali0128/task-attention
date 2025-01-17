@@ -1,0 +1,15 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+
+  "overrides": [
+    {
+      "files": ".eslintrc",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
