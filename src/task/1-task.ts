@@ -31,7 +31,7 @@ export async function task(roundNumber: number): Promise<void> {
       width: 1920,
       height: 1080,
     });
-    await page.goto('https://www.koii.network/blog');
+    await page.goto('https://www.koii.network/blog?utm_source=koiitask&utm_medium=koiitask');
     // Get page Title
     const title = await page.title();
     console.log('Page Title:', title);
@@ -56,9 +56,10 @@ export async function task(roundNumber: number): Promise<void> {
     await page.evaluate(() => {
       window.scrollBy(0, window.innerHeight);
     });
-    await new Promise(resolve => setTimeout(resolve, 300000));
-    console.log(`Thanks for running the Free SOMA Task!`);
-    await namespaceWrapper.storeSet("value", "Hello, SOMA!");
+    await new Promise(resolve => setTimeout(resolve, 30000));
+    console.log(`Thanks for running the Attention Booster Task!`);
+    await namespaceWrapper.storeSet("value", title);
+    await browser.close();
   } catch (error) {
     console.error("EXECUTE TASK ERROR:", error);
   }

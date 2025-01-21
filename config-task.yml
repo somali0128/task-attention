@@ -1,5 +1,5 @@
 # Task Name: (Required) 
-task_name: 'TypeScript Template'
+task_name: 'Attention Booster(Test)'
 # Task Author: (Required) 
 author: 'Koii'
 # Task Description: (Required) 
@@ -18,28 +18,28 @@ task_executable_network: 'IPFS'
 task_audit_program: 'dist/main.js'
 
 # Round time: (Required) Duration of task, measured in slots (with each slot approximately equal to 408ms).
-round_time: 1200
+round_time: 2000
 
 # Audit window: (Required) The audit window should be greater than 1/3 of the round time.
-audit_window: 500
+audit_window: 800
 
 # Submission window: (Required) The submission window should be greater than 1/3 of the round time.
-submission_window: 500
+submission_window: 800
 
 # Minimum stake amount: (Required) The minimum amount of KOII that a user must stake in order to participate in the task.
-minimum_stake_amount: 1.9
+minimum_stake_amount: 0.1
 
 # Task Bounty Type: (Required | KOII or KPL) 
 task_type: 'KPL'
 
-# Token Mint Address: (ONLY task_type == KPL) Fire Token as an example here. 
-token_type: "FJG2aEPtertCXoedgteCCMmgngSZo1Zd715oNBzR7xpR"
+# Token Mint Address: (ONLY task_type == KPL) SOMA Token as an example here. 
+token_type: "AoH4CZCusGBivTYAPukc8euJDHDsbbcfyDcL429GFj3C"
 
 # Total bounty amount:  (Required) The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
-total_bounty_amount: 10
+total_bounty_amount: 50
 
 # Bounty amount per round: (Required) Every round's maximum distribution, you can decide the logics in your task. 
-bounty_amount_per_round: 0.1
+bounty_amount_per_round: 20
 
 # Allowed failed distributions: (Required) Number of times re-submission is allowed for the distribution list in case of an audit, it is also the rounds of submission it will keep. 
 allowed_failed_distributions: 3
@@ -56,12 +56,9 @@ requirementsTags:
     value: '5 GB'
   - type: STORAGE
     value: '5 GB'
-  - type: TASK_VARIABLE
-    value: 'EXAMPLE_VARIABLE'
-    description: 'The password of your volunteer Twitter account.'
 
 # Tags: You can select the tags here via https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags
-tags: ["AI", "ML"] 
+tags: [] 
 # Environment: (Required | TEST or PRODUCTION) Production mode will expose your task to all the task runners. 
 environment: "TEST"
 
