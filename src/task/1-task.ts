@@ -31,7 +31,7 @@ export async function task(roundNumber: number): Promise<void> {
       width: 1920,
       height: 1080,
     });
-    await page.goto('https://www.koii.network/blog?utm_source=koiitask&utm_medium=koiitask');
+    await page.goto('https://www.sticksoma.com/?utm_source=koiitask&utm_medium=koiitask');
     // Get page Title
     const title = await page.title();
     console.log('Page Title:', title);
@@ -49,7 +49,10 @@ export async function task(roundNumber: number): Promise<void> {
     await new Promise(resolve => setTimeout(resolve, 3000));
     const newTitle = await page.title();
     console.log('New Page Title:', newTitle);
-
+    
+    await page.evaluate(() => {
+      window.scrollBy(0, window.innerHeight);
+    });
     // Wait for 3 seconds
     await new Promise(resolve => setTimeout(resolve, 3000));
     // Simulate a scroll

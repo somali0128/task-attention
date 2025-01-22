@@ -1,15 +1,18 @@
 # Task Name: (Required) 
-task_name: 'Attention Booster(Test)'
+task_name: 'Attention Booster'
 # Task Author: (Required) 
-author: 'Koii'
+author: 'Soma'
+
+markdownDescriptionPath: "./TaskDescription.md"
 # Task Description: (Required) 
-description: 'description'
+description: ''
+
 # Repository URL: (Required)
-repositoryUrl: 'https://github.com/koii-network/task-template' 
+repositoryUrl: 'https://github.com/somali0128/task-attention' 
 # Image URL: (Required) Will be displayed in desktop node
-imageUrl: 'imageUrl'
+imageUrl: 'https://bafybeiexsguaiykrfd2onhbyevgleoeonshvr7dvjaewmoe5scd2egt3wu.ipfs.w3s.link/attentiontask.png'
 # Info URL: (Required) Will be displayed in desktop node
-infoUrl: 'infoUrl'
+infoUrl: 'https://www.koii.network/ocean/Soma'
 
 # Task executable network: (Required | DEVELOPMENT, ARWEAVE, or IPFS) : IPFS is the default and common value
 task_executable_network: 'IPFS'
@@ -36,17 +39,17 @@ task_type: 'KPL'
 token_type: "AoH4CZCusGBivTYAPukc8euJDHDsbbcfyDcL429GFj3C"
 
 # Total bounty amount:  (Required) The total bounty amount that will be distributed to the task. (Not accepted in case of update task).
-total_bounty_amount: 50
+total_bounty_amount: 1000000
 
 # Bounty amount per round: (Required) Every round's maximum distribution, you can decide the logics in your task. 
-bounty_amount_per_round: 20
+bounty_amount_per_round: 10000
 
 # Allowed failed distributions: (Required) Number of times re-submission is allowed for the distribution list in case of an audit, it is also the rounds of submission it will keep. 
 allowed_failed_distributions: 3
 
 # Space: (Required) Expected Task Data Size in MBs for the account size. 
 # Minimum: 1 for production, 0.1 for testing; Calculation Details: https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#space
-space: 0.1
+space: 1
 
 # Requirement Tags: (Optional): To add more global variables and task variables, please refer to the type, value, description format shown below.
 requirementsTags:
@@ -58,9 +61,9 @@ requirementsTags:
     value: '5 GB'
 
 # Tags: You can select the tags here via https://www.koii.network/docs/develop/command-line-tool/create-task-cli/create-task#tags
-tags: [] 
+tags: ['Data Gathering'] 
 # Environment: (Required | TEST or PRODUCTION) Production mode will expose your task to all the task runners. 
-environment: "TEST"
+environment: "PRODUCTION"
 
 #################################### BELOW IS FOR UPDATE TASK ONLY ####################################
 # Old Task ID: (ONLY for task update) 

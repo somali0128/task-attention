@@ -35,7 +35,7 @@ export function distribution(
     return distributionList;
   }
   // reward the submitters who submitted correct values
-  const reward = 1 * 1000000000;
+  const reward = 2 * 1000000000;
   // console.log("REWARD PER NODE", reward);
   approvedSubmitters.forEach((candidate) => {
     distributionList[candidate] = reward;
